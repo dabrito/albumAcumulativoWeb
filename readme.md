@@ -1,4 +1,7 @@
-npx sequelize-cli db:migrate
+
+http://localhost:3000/fotos/findAll/json
+
+
 
 npx sequelize-cli seed:generate --name fotos
 
@@ -35,3 +38,5 @@ await queryInterface.bulkDelete('fotos', null, {});
 
 npx sequelize-cli db:seed --seed YYYYMMDDHHMMSS-fotos
 
+
+npx sequelize-cli migration:generate --name associate-foto-etiqueta
