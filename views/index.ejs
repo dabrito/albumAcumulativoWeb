@@ -9,13 +9,13 @@
 </head>
 
 <body>
+  <%- include("partials/menu") -%>
   <h1>
     <%= title %> 
     <button id="showAll" class="btn btn-primary">Ver Album</button>
   </h1>
   <p>Welcome to <%= title %>
   </p>
-
   <script>
     document.getElementById('showAll').addEventListener('click', function () {
       window.location.href = '/fotos/findAll/view';
